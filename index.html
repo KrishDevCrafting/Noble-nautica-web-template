@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>noble nautica web templets Website</title>
+    <title>noble nautica web templates Website</title>
     <script
     src="https://cdn.tailwindcss.com"
     ></script>
     <style>
-        body{
-            background-color: black;
-            margin: 20px;
-        }
+        
         /* .container{
             margin-top: -25px;
         }
@@ -22,11 +19,10 @@
 <body class="m-0 p-0 overflow-x-hidden">
 
 
-<img src="./Assets/img-occen.jpeg"
+<img src="./Assets/img-ocean.jpeg"
 class="w-full h-screen object-cover
 absolute
 inset-0"
-style="filter: brightness(60%);"
 
 alt="">
 
@@ -40,12 +36,14 @@ alt="">
   >
 
     <!-- Overlay (for text readability) -->
-    <div class="absolute inset-0 "></div>
+    <div class="absolute inset-0"></div>
 
     <!-- NAVBAR -->
     <nav class="relative z-10 flex justify-between items-center 
                 mx-auto mt-6 px-8 py-4 
-                bg-white/90 rounded-full w-full max-w-6xl">
+                bg-white/90 rounded-full w-full max-w-6xl"
+                style="background-color: rgba(193, 188, 188, 0.4);"
+                >
 
       <!-- Logo -->
       <div class="font-bold text-lg text-blue-900">
@@ -75,19 +73,113 @@ alt="">
         professionals across the globe.
       </p>
 
-      <button class="mt-8 bg-white text-blue-900 
+      <button class="mt-8  
                      px-6 py-3 rounded-full 
                      text-sm font-semibold 
-                     hover:bg-gray-200 transition">
-        Explore Our Product
+                     hover:bg-gray-200 transition"
+                     style="background-color: #c8dbe8;"
+                     >
+        Explore Our Products
       </button>
 
     </div>
 
   </section>
 
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Our Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+        Filtration
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+        Pumps
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+        Air Blowers
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+        Pool Cleaning
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+        Robotic Pool Cleaners
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- PRODUCT SHOWCASE COMPONENT -->
+<section class="relative bg-gray-100 py-20 overflow-hidden">
 
+  <div class="max-w-7xl mx-auto px-6 flex gap-12">
 
+    <!-- LEFT: Product Cards -->
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Card 1 -->
+      <div class="border-2 border-blue-700 bg-white p-6 text-center">
+        <img src="./Assets/Filtration.png" alt="Filter"
+             class="mx-auto h-40 object-contain">
+        <p class="mt-6 text-sm text-gray-600">
+      Designed for easy setup of domestic pools,
+the NN-FC-TM SERIES Filtration Combo
+offers the ideal solution for home users
+seeking user-friendly operation and excellent
+filtration performance
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border-2 border-blue-700 bg-white p-6 text-center">
+        <img src="./Assets/speed-pump.png" alt="Pump"
+             class="mx-auto h-40 object-contain">
+        <p class="mt-6 text-sm text-gray-600">
+         NN-VSP-PP variable-speed pumps
+continuously adjust their water flow to
+match real-time system demand. This
+intelligent modulation not only optimizes
+energy use but also enhances the
+overall efficiency of plant operations
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border-2 border-blue-700 bg-white p-6 text-center">
+        <img src="./Assets/pump.png" alt="Blower"
+             class="mx-auto h-40 object-contain">
+        <p class="mt-6 text-sm text-gray-600">
+          The Radial Flow Gas Pump is a high performance air-moving solution, also known
+as a ring blower, designed to deliver
+consistent high-pressure airflow for
+demanding industrial
+applications.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Vertical Heading -->
+    <div class="w-20 flex items-center">
+      <h2 class="text-blue-800 font-bold text-3xl rotate-90 whitespace-nowrap">
+        Trusted leader in pool equipment and technology solutions
+      </h2>
+    </div>
+
+  </div>
+
+  <!-- Button -->
+  <div class="flex justify-center p-2">
+    <button class="text-white px-6 py-3 rounded-md text-sm
+    
+    "
+    style="background-color: #385685;"
+    >
+      Explore Our Products
+    </button>
+  </div>
+
+  
+</section>
 </body>
 </html>
