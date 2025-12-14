@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>noble nautica web templates Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <style>
     /* .container{
             margin-top: -25px;
@@ -193,9 +195,10 @@ inset-0" alt="">
 
           <p class="text-sm leading-relaxed mb-8 max-w-md">
             Our digital catalogue redefines product discovery, visually immersive,
-            technically precise, and designed to guide users seamlessly from specs
-            sheets to standout visuals. Everything you need to specify with confidence,
-            all in one place.
+            technically robust, and intuitively structured. From spec sheets to
+            standout visuals, everything you need to specify with confidence, all in
+            one place.
+
           </p>
 
           <button class="bg-blue-700 hover:bg-blue-800 transition
@@ -206,9 +209,9 @@ inset-0" alt="">
 
         <!-- RIGHT PREVIEW CARD -->
         <div class="md:w-1/2">
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="">
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-2">
               <img src="./Assets/imgs.png" class="rounded-md object-cover">
 
             </div>
@@ -218,12 +221,7 @@ inset-0" alt="">
 
       </div>
 
-      <!-- Floating Button -->
-      <div class="absolute right-6 top-1/2 -translate-y-1/2">
-        <button class="bg-blue-800 text-white px-6 py-3 rounded-md text-sm">
-          Explore Our Product
-        </button>
-      </div>
+
 
     </div>
 
@@ -233,8 +231,85 @@ inset-0" alt="">
 
 
 
+  <!-- FUTURE OF WATER SPACES COMPONENT -->
+  <section class="py-24 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6 
+              grid grid-cols-1 lg:grid-cols-2 
+              gap-10 items-center justify-items-center">
+
+      <!-- TEXT CONTENT -->
+      <div class="max-w-xl flex flex-col justify-center">
+
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">
+          Crafting the Future of Water Spaces
+        </h2>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-8">
+          We’re enabling a new era of swimming pool infrastructure—where design
+          meets technology, and every solution is as functional as it is visually
+          transparent. Our digital catalogue brings this vision to life: design-driven
+          layouts, technically advanced details, and crystal-clear product presentation.
+          From precision specifications to stunning visuals, it’s everything you need to
+          build with confidence, all in one place.
+
+        </p>
+
+        <button class="w-fit bg-blue-700 hover:bg-blue-800 transition
+                     text-white px-6 py-3 rounded-md text-sm">
+          Learn More About Us
+        </button>
+
+      </div>
+
+      <!-- FEATURE CARD -->
+      <div class="bg-gray-200 rounded-2xl p-10 
+                flex flex-col items-center justify-center text-center
+                w-full max-w-sm h-96">
+
+        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+          🔍
+        </div>
+
+        <p class="text-blue-900 font-semibold">
+          Excellence in Innovation
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <section>
+    <div class="flex justify-center items-center border-2 w-full h-40 gap-10">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center gap-3 text-sm">
+        <img src="./Assets/swimming-pool-ladder-svgrepo-com.svg" alt="Pool icon" class="w-8 h-8" />
+        <span>Installed in 12,000+ sites</span>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col items-center text-sm">
+        <i data-lucide="map-pin" class="w-8 h-8 mb-1"></i>
+        <span class="text-center">Exporting to 80+ countries</span>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col items-center  text-sm">
+        <i data-lucide="users" class="w-8 h-8"></i>
+
+        <p>100+ worldwide distributors</p>
+      </div>
+
+    </div>
+  </section>
+
 
 
 </body>
+<script>
+  lucide.createIcons();
+</script>
 
 </html>
