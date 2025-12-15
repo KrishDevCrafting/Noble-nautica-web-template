@@ -1,0 +1,22 @@
+/* Style for the Blue Box */
+.cta-box {
+    background-color: #5c86a8;
+    /* Your blue color */
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+    /* Centers the box */
+    border-radius: 8px;
+
+    /* --- THE MAGIC PART --- */
+ 
+    
+}
+
+/* Style for the Footer Section */
+.footer-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* Lower than the box so it stays behind */
+}
